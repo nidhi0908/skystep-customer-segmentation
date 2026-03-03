@@ -57,7 +57,7 @@ The SkyStep retail database consists of a single comprehensive table with **19,9
 
 SkyStep's customer base reveals three strategically distinct segments with dramatically different engagement levels and revenue contributions. While **50.5% of customers are classified as "Dormant"** with minimal recent activity, the **27.5% "Slipping Loyalists"** segment drives the majority of revenue despite showing signs of declining engagement. The **22% "New & Active"** customers represent the company's growth engine but currently contribute the least revenue. This segmentation unveils a critical business tension: SkyStep's revenue is concentrated in at-risk customers, while its most engaged segment remains undermonetized.
 
-![Customer Segment Overview](assets/segment_distribution.png)
+![Customer Segment Overview](assets/segments.png)
 
 **Key Metrics by Segment:**
 
@@ -81,7 +81,7 @@ SkyStep's customer base reveals three strategically distinct segments with drama
 
 **Main Insight 4:** K-Means clustering with log-transformed RFM metrics produced well-balanced segments (10,073 / 5,496 / 4,376 customers), indicating that the three-cluster solution effectively captures the natural groupings in SkyStep's customer behavior patterns without over-segmentation.
 
-![RFM Distribution by Segment](assets/rfm_clusters.png)
+![RFM Distribution by Segment](assets/RFM_Summary.png)
 
 ---
 
@@ -109,7 +109,7 @@ SkyStep's customer base reveals three strategically distinct segments with drama
 
 **Main Insight 4:** The 68-day spread between Dormant and Slipping Loyalist recency (189 vs 121 days) suggests that customer slippage accelerates over time. Once customers cross the 120-day threshold, they rapidly drift toward full dormancy, highlighting the importance of early intervention.
 
-![Customer Lifecycle Journey](assets/lifecycle_timeline.png)
+![Customer Lifecycle Journey](assets/customer_lifecycle.png)
 
 ---
 
@@ -117,14 +117,11 @@ SkyStep's customer base reveals three strategically distinct segments with drama
 
 **Main Insight 1:** Each segment requires a fundamentally different approach: New & Active need **nurturing and education**, Slipping Loyalists need **win-back incentives**, and Dormant Customers need **aggressive reactivation or sunset** decisions to optimize marketing spend.
 
-**Main Insight 2:** The `interested_in_categories_12` field in the dataset provides untapped personalization opportunities. Cross-referencing category interests with actual purchase patterns could reveal whether customers are finding products in their areas of interest or hitting catalog limitations.
+**Main Insight 2:** With 19,945 total customers across three segments, the marketing team can create distinct campaigns with appropriate budget allocation: 55% for Slipping Loyalist retention, 30% for New & Active nurturing, and 15% for Dormant reactivation/win-back testing.
 
-**Main Insight 3:** With 19,945 total customers across three segments, the marketing team can create distinct campaigns with appropriate budget allocation: 55% for Slipping Loyalist retention, 30% for New & Active nurturing, and 15% for Dormant reactivation/win-back testing.
+**Main Insight 3:** The K-Means model (saved as `Marketing_Target_List.csv` and `SkyStep_Final_Tableau_Data.csv`) provides a actionable customer roster with segment assignments, enabling immediate campaign deployment without requiring additional data processing by marketing teams.
 
-**Main Insight 4:** The K-Means model (saved as `Marketing_Target_List.csv` and `SkyStep_Final_Tableau_Data.csv`) provides a actionable customer roster with segment assignments, enabling immediate campaign deployment without requiring additional data processing by marketing teams.
-
-![Segment Targeting Strategy](assets/targeting_matrix.png)
-
+![Full Dashboard](assets/dashboard_overview.png)
 ---
 
 ## Recommendations
@@ -188,9 +185,8 @@ All code is version-controlled with the PostgreSQL connection string externalize
 ## Contact & Next Steps
 
 For questions about this analysis or to discuss customer segmentation strategies, please feel free to reach out via:
-- **LinkedIn:** [Your LinkedIn URL]
-- **Email:** [Your Email]
-- **Portfolio:** [Your Portfolio Website]
+- **LinkedIn:** https://www.linkedin.com/in/gayatri-triplicane/
+- **Email:** [gayatri.triplicane9@gmail.com]
 
 **Future Enhancements:**
 - Incorporate product category preferences into segmentation
