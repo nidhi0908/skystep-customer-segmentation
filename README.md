@@ -81,7 +81,7 @@ SkyStep's customer base reveals three strategically distinct segments with drama
 
 **Main Insight 4:** K-Means clustering with log-transformed RFM metrics produced well-balanced segments (10,073 / 5,496 / 4,376 customers), indicating that the three-cluster solution effectively captures the natural groupings in SkyStep's customer behavior patterns without over-segmentation.
 
-![RFM Distribution by Segment](assets/RFM_Summary.png)
+![RFM Distribution by Segment](assets/rfm_summary.png)
 
 ---
 
